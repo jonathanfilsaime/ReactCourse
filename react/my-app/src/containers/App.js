@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-import Person from './Person/Person';
+import dash from './App.css';
+import Person from '../Components/Persons/Person/Person';
+import Persons from '../Components/Persons/Persons';
+import Cockpit from '../Components/Cockpit/Cockpit'
 
 class App extends Component {
     state = {
@@ -65,33 +67,31 @@ class App extends Component {
       let persons = null;
       let classes = [];
       if(this.state.persons.length <= 2){
-          classes.push('red');
+          classes.push(dash.red);
       }
-      if(this.state.persons.length <= 2){
-          classes.push('bold');
+      if(this.state.persons.length <= 1){
+          classes.push(dash.bold);
       }
+
+      console.log(dash.App);
 
       if(this.state.showPerson){
           persons = (
               <div>
-                  {this.state.persons.map((person, index) => {
-                      return <Person
-                          name={person.name}
-                          age={person.age}
-                          click={() => this.deletePersonHandler(index)}
-                          key={person.id}
-                          changed={(event) => this.nameChangeHandler(event, person.id)}/>
-                  })}
+                  <Persons
+                      persons={this.state.persons}
+                      clicked={this.deletePersonHandler}
+                      changed={this.nameChangeHandler}/>
               </div>
           );
           style.backgroundColor = 'red';
       }
 
     return (
-      <div className="App">
-        <h1>Hi mate</h1>
-          <p className={classes.join(' ')}>this is really working</p>
-          <button onClick={this.togglePersonsHandler} style={style}>Switch Name</button>
+      <div className={dash.App}>
+          <Cockpit showPerson={this.state.showPerson}
+                   persons={this.state.persons}
+                   clicked={this.togglePersonsHandler}/>
           {persons}
       </div>
 

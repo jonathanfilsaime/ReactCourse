@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
+import Radium, {StyleRoot} from 'radium';
 
 class App extends Component {
     state = {
@@ -23,6 +24,7 @@ class App extends Component {
     };
 
     nameChangeHandler = (event, id) => {
+
         const personIndex = this.state.persons.findIndex(p => {
             return p.id === id;
         });
@@ -35,7 +37,7 @@ class App extends Component {
 
         persons[personIndex] = person;
 
-        this.setState({persons: person});
+        this.setState({persons: persons});
 
     };
 
@@ -52,14 +54,26 @@ class App extends Component {
 
   render() {
       const style = {
-          background: 'white',
+          background: 'green',
+          color: 'white',
           font: 'inherit',
           border: '1px solid blue',
           padding: '8px',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          ':hover' : {
+              backgroundColor: 'lightgreen',
+              color: 'black'
+          }
       };
 
       let persons = null;
+      let classes = [];
+      if(this.state.persons.length <= 2){
+          classes.push('red');
+      }
+      if(this.state.persons.length <= 2){
+          classes.push('bold');
+      }
 
       if(this.state.showPerson){
           persons = (
@@ -74,17 +88,25 @@ class App extends Component {
                   })}
               </div>
           );
+
+          style.backgroundColor = 'red';
+          style[':hover'] = {
+              backgroundColor: 'lightgreen',
+              color: 'black'
+          };
       }
 
     return (
+        <StyleRoot>
       <div className="App">
         <h1>Hi mate</h1>
-          <p>this is really working</p>
+          <p className={classes.join(' ')}>this is really working</p>
           <button onClick={this.togglePersonsHandler} style={style}>Switch Name</button>
           {persons}
       </div>
+        </StyleRoot>
     );
   }
 }
 
-export default App;
+export default Radium(App);

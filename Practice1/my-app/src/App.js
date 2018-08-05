@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
+import Validation from './Validation/Validation';
 import './App.css';
 
 class App extends Component {
     state = {
-        userName: 'jonathan',
+        username: 1,
         password: 'filsaime'
     };
 
     modifyNameHandler = (event) => {
+
         this.setState({
-            userName: event.target.value,
+            username: event.target.value.length,
             password: 'sejud'
         });
     };
@@ -29,7 +31,8 @@ class App extends Component {
      <div>
          <p style={style}>hey why aren't you working</p>
          <UserInput change={this.modifyNameHandler} />
-         <UserOutput userName={this.state.userName} password={this.state.password}/>
+         <UserOutput username={this.state.username} password={this.state.password}/>
+         <Validation username={this.state.username}/>
      </div>
     );
   };

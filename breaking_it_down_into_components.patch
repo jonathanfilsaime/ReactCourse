@@ -1,0 +1,898 @@
+Index: react/my-app/src/App.css
+===================================================================
+--- react/my-app/src/App.css	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/src/App.css	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
+@@ -1,4 +0,0 @@
+-.App {
+-  text-align: center;
+-}
+-
+Index: react/my-app/package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/package-lock.json	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/package-lock.json	(date 1533504117266)
+@@ -3709,6 +3709,16 @@
+         "promise": "7.3.1",
+         "setimmediate": "1.0.5",
+         "ua-parser-js": "0.7.18"
++      },
++      "dependencies": {
++        "promise": {
++          "version": "7.3.1",
++          "resolved": "https://registry.npmjs.org/promise/-/promise-7.3.1.tgz",
++          "integrity": "sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==",
++          "requires": {
++            "asap": "2.0.6"
++          }
++        }
+       }
+     },
+     "figures": {
+@@ -5483,7 +5493,7 @@
+       "integrity": "sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=",
+       "requires": {
+         "node-fetch": "1.7.3",
+-        "whatwg-fetch": "2.0.4"
++        "whatwg-fetch": "2.0.3"
+       }
+     },
+     "isstream": {
+@@ -8579,9 +8589,9 @@
+       "integrity": "sha1-ihvjZr+Pwj2yvSPxDG/pILQ4nR8="
+     },
+     "promise": {
+-      "version": "7.3.1",
+-      "resolved": "https://registry.npmjs.org/promise/-/promise-7.3.1.tgz",
+-      "integrity": "sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==",
++      "version": "8.0.1",
++      "resolved": "https://registry.npmjs.org/promise/-/promise-8.0.1.tgz",
++      "integrity": "sha1-5F1osAoXZHttpxG/he1u1HII9FA=",
+       "requires": {
+         "asap": "2.0.6"
+       }
+@@ -8836,67 +8846,6 @@
+       "resolved": "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-4.0.0.tgz",
+       "integrity": "sha512-FlsPxavEyMuR6TjVbSSywovXSEyOg6ZDj5+Z8nbsRl9EkOzAhEIcS+GLoQDC5fz/t9suhUXWmUrOBrgeUvrMxw=="
+     },
+-    "react-scripts": {
+-      "version": "1.1.4",
+-      "resolved": "https://registry.npmjs.org/react-scripts/-/react-scripts-1.1.4.tgz",
+-      "integrity": "sha512-UVZIujEIT9BGbx+NGvyfS92eOrNIIpqqFi1FP7a0O9l94A/XV7bhPk70SfDKaXZouCX81tFdXo0948DjhCEgGw==",
+-      "requires": {
+-        "autoprefixer": "7.1.6",
+-        "babel-core": "6.26.0",
+-        "babel-eslint": "7.2.3",
+-        "babel-jest": "20.0.3",
+-        "babel-loader": "7.1.2",
+-        "babel-preset-react-app": "3.1.2",
+-        "babel-runtime": "6.26.0",
+-        "case-sensitive-paths-webpack-plugin": "2.1.1",
+-        "chalk": "1.1.3",
+-        "css-loader": "0.28.7",
+-        "dotenv": "4.0.0",
+-        "dotenv-expand": "4.2.0",
+-        "eslint": "4.10.0",
+-        "eslint-config-react-app": "2.1.0",
+-        "eslint-loader": "1.9.0",
+-        "eslint-plugin-flowtype": "2.39.1",
+-        "eslint-plugin-import": "2.8.0",
+-        "eslint-plugin-jsx-a11y": "5.1.1",
+-        "eslint-plugin-react": "7.4.0",
+-        "extract-text-webpack-plugin": "3.0.2",
+-        "file-loader": "1.1.5",
+-        "fs-extra": "3.0.1",
+-        "fsevents": "1.2.4",
+-        "html-webpack-plugin": "2.29.0",
+-        "jest": "20.0.4",
+-        "object-assign": "4.1.1",
+-        "postcss-flexbugs-fixes": "3.2.0",
+-        "postcss-loader": "2.0.8",
+-        "promise": "8.0.1",
+-        "raf": "3.4.0",
+-        "react-dev-utils": "5.0.1",
+-        "resolve": "1.6.0",
+-        "style-loader": "0.19.0",
+-        "sw-precache-webpack-plugin": "0.11.4",
+-        "url-loader": "0.6.2",
+-        "webpack": "3.8.1",
+-        "webpack-dev-server": "2.9.4",
+-        "webpack-manifest-plugin": "1.3.2",
+-        "whatwg-fetch": "2.0.3"
+-      },
+-      "dependencies": {
+-        "promise": {
+-          "version": "8.0.1",
+-          "resolved": "https://registry.npmjs.org/promise/-/promise-8.0.1.tgz",
+-          "integrity": "sha1-5F1osAoXZHttpxG/he1u1HII9FA=",
+-          "requires": {
+-            "asap": "2.0.6"
+-          }
+-        },
+-        "whatwg-fetch": {
+-          "version": "2.0.3",
+-          "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz",
+-          "integrity": "sha1-nITsLc9oGH/wC8ZOEnS0QhduHIQ="
+-        }
+-      }
+-    },
+     "read-pkg": {
+       "version": "1.1.0",
+       "resolved": "https://registry.npmjs.org/read-pkg/-/read-pkg-1.1.0.tgz",
+@@ -11080,9 +11029,9 @@
+       }
+     },
+     "whatwg-fetch": {
+-      "version": "2.0.4",
+-      "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz",
+-      "integrity": "sha512-dcQ1GWpOD/eEQ97k66aiEVpNnapVj90/+R+SXTPYGHpYBBypfKJEQjLrvMZ7YXbKm21gXd4NcuxUTjiv1YtLng=="
++      "version": "2.0.3",
++      "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz",
++      "integrity": "sha1-nITsLc9oGH/wC8ZOEnS0QhduHIQ="
+     },
+     "whatwg-url": {
+       "version": "4.8.0",
+Index: react/my-app/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/package.json	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/package.json	(date 1533504106094)
+@@ -3,15 +3,93 @@
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
++    "autoprefixer": "7.1.6",
++    "babel-core": "6.26.0",
++    "babel-eslint": "7.2.3",
++    "babel-jest": "20.0.3",
++    "babel-loader": "7.1.2",
++    "babel-preset-react-app": "^3.1.1",
++    "babel-runtime": "6.26.0",
++    "case-sensitive-paths-webpack-plugin": "2.1.1",
++    "chalk": "1.1.3",
++    "css-loader": "0.28.7",
++    "dotenv": "4.0.0",
++    "dotenv-expand": "4.2.0",
++    "eslint": "4.10.0",
++    "eslint-config-react-app": "^2.1.0",
++    "eslint-loader": "1.9.0",
++    "eslint-plugin-flowtype": "2.39.1",
++    "eslint-plugin-import": "2.8.0",
++    "eslint-plugin-jsx-a11y": "5.1.1",
++    "eslint-plugin-react": "7.4.0",
++    "extract-text-webpack-plugin": "3.0.2",
++    "file-loader": "1.1.5",
++    "fs-extra": "3.0.1",
++    "html-webpack-plugin": "2.29.0",
++    "jest": "20.0.4",
++    "object-assign": "4.1.1",
++    "postcss-flexbugs-fixes": "3.2.0",
++    "postcss-loader": "2.0.8",
++    "promise": "8.0.1",
+     "radium": "^0.24.1",
++    "raf": "3.4.0",
+     "react": "^16.4.1",
++    "react-dev-utils": "^5.0.1",
+     "react-dom": "^16.4.1",
+-    "react-scripts": "1.1.4"
++    "resolve": "1.6.0",
++    "style-loader": "0.19.0",
++    "sw-precache-webpack-plugin": "0.11.4",
++    "url-loader": "0.6.2",
++    "webpack": "3.8.1",
++    "webpack-dev-server": "2.9.4",
++    "webpack-manifest-plugin": "1.3.2",
++    "whatwg-fetch": "2.0.3"
+   },
+   "scripts": {
+-    "start": "react-scripts start",
+-    "build": "react-scripts build",
+-    "test": "react-scripts test --env=jsdom",
+-    "eject": "react-scripts eject"
++    "start": "node scripts/start.js",
++    "build": "node scripts/build.js",
++    "test": "node scripts/test.js --env=jsdom"
++  },
++  "jest": {
++    "collectCoverageFrom": [
++      "src/**/*.{js,jsx,mjs}"
++    ],
++    "setupFiles": [
++      "<rootDir>/config/polyfills.js"
++    ],
++    "testMatch": [
++      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
++      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
++    ],
++    "testEnvironment": "node",
++    "testURL": "http://localhost",
++    "transform": {
++      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
++      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
++      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
++    },
++    "transformIgnorePatterns": [
++      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
++    ],
++    "moduleNameMapper": {
++      "^react-native$": "react-native-web"
++    },
++    "moduleFileExtensions": [
++      "web.js",
++      "js",
++      "json",
++      "web.jsx",
++      "jsx",
++      "node",
++      "mjs"
++    ]
++  },
++  "babel": {
++    "presets": [
++      "react-app"
++    ]
++  },
++  "eslintConfig": {
++    "extends": "react-app"
+   }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ .idea/workspace.xml	(date 1533511751437)
+@@ -2,8 +2,19 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="c1d210b2-f5b9-451e-840d-25dac65f8b5b" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/react/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/App.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/react/my-app/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/Person/Person.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/react/my-app/src/Components/Persons/Persons.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/react/my-app/src/containers/App.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/package-lock.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/package.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/src/App.css" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/containers/App.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/containers/App.test.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/src/Person/Person.css" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/Components/Persons/Person/Person.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/Components/Persons/Person/Person.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/react/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/my-app/src/index.js" afterDir="false" />
+     </list>
+     <ignored path="$PROJECT_DIR$/.tmp/" />
+     <ignored path="$PROJECT_DIR$/temp/" />
+@@ -24,33 +35,33 @@
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.open">
+         <counts>
+-          <entry key="css" value="3" />
++          <entry key="css" value="5" />
+           <entry key="html" value="1" />
+-          <entry key="js" value="6" />
++          <entry key="js" value="13" />
+           <entry key="json" value="2" />
+           <entry key="md" value="1" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.open">
+         <counts>
+-          <entry key="CSS" value="3" />
++          <entry key="CSS" value="5" />
+           <entry key="HTML" value="1" />
+           <entry key="JSON" value="2" />
+-          <entry key="JavaScript" value="6" />
++          <entry key="JavaScript" value="13" />
+           <entry key="PLAIN_TEXT" value="1" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.extensions.edit">
+         <counts>
+-          <entry key="css" value="139" />
+-          <entry key="js" value="2161" />
++          <entry key="css" value="174" />
++          <entry key="js" value="2854" />
+           <entry key="txt" value="31" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.edit">
+         <counts>
+-          <entry key="CSS" value="139" />
+-          <entry key="JavaScript" value="2161" />
++          <entry key="CSS" value="174" />
++          <entry key="JavaScript" value="2854" />
+           <entry key="PLAIN_TEXT" value="31" />
+         </counts>
+       </usages-collector>
+@@ -59,11 +70,11 @@
+   </component>
+   <component name="FileEditorManager">
+     <leaf>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/App.js">
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/containers/App.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="2380">
+-              <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
++            <state relative-caret-position="688">
++              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+               <folding>
+                 <element signature="e#0#41#0" expanded="true" />
+               </folding>
+@@ -72,10 +83,19 @@
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/Person/Person.js">
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Persons/Persons.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="28">
++              <caret line="1" column="13" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="13" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="392">
+-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
++            <state relative-caret-position="296">
++              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+               <folding>
+                 <element signature="e#0#26#0" expanded="true" />
+               </folding>
+@@ -84,46 +104,47 @@
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/Person/Person.css">
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.css">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="196">
+-              <caret line="7" column="1" selection-end-line="7" selection-end-column="1" />
++              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/App.css">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="84">
+-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+-            </state>
+-          </provider>
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Persons/Person/Person.css">
++          <provider selected="true" editor-type-id="text-editor" />
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/index.css">
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Persons/Person/Person.js">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="336">
+-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
++              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
++              <folding>
++                <element signature="e#0#26#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/App.test.js">
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/containers/App.css">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state>
+-              <folding>
+-                <element signature="e#0#26#0" expanded="true" />
+-              </folding>
++            <state relative-caret-position="112">
++              <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="1" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/src/registerServiceWorker.js">
+-          <provider selected="true" editor-type-id="text-editor" />
++        <entry file="file://$PROJECT_DIR$/react/my-app/src/index.css">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="336">
++              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
++            </state>
++          </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+@@ -138,18 +159,21 @@
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/public/index.html">
++        <entry file="file://$PROJECT_DIR$/react/my-app/config/webpack.config.dev.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-336" />
++            <state relative-caret-position="415">
++              <caret line="167" column="68" lean-forward="true" selection-start-line="167" selection-start-column="68" selection-end-line="167" selection-end-column="68" />
++            </state>
+           </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/react/my-app/package.json">
+-          <provider selected="true" editor-type-id="text-editor" />
+         </entry>
+       </file>
+     </leaf>
++  </component>
++  <component name="FindInProjectRecents">
++    <findStrings>
++      <find>\.css</find>
++      <find>\.css$</find>
++    </findStrings>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -158,11 +182,18 @@
+     <option name="CHANGED_PATHS">
+       <list>
+         <option value="$PROJECT_DIR$/react/index.js" />
+-        <option value="$PROJECT_DIR$/react/my-app/src/App.css" />
+         <option value="$PROJECT_DIR$/react/my-app/src/Person/Person.css" />
+         <option value="$PROJECT_DIR$/react/my-app/src/index.css" />
+-        <option value="$PROJECT_DIR$/react/my-app/src/App.js" />
++        <option value="$PROJECT_DIR$/react/my-app/config/webpack.config.prod.js" />
++        <option value="$PROJECT_DIR$/react/my-app/config/webpack.config.dev.js" />
++        <option value="$PROJECT_DIR$/react/my-app/src/App.css" />
+         <option value="$PROJECT_DIR$/react/my-app/src/Person/Person.js" />
++        <option value="$PROJECT_DIR$/react/my-app/src/App.js" />
++        <option value="$PROJECT_DIR$/react/my-app/src/Components/Persons/Persons.js" />
++        <option value="$PROJECT_DIR$/react/my-app/src/containers/App.css" />
++        <option value="$PROJECT_DIR$/react/my-app/src/containers/App.js" />
++        <option value="$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.css" />
++        <option value="$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.js" />
+       </list>
+     </option>
+   </component>
+@@ -226,7 +257,24 @@
+               <item name="react" type="462c0819:PsiDirectoryNode" />
+               <item name="my-app" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+-              <item name="Person" type="462c0819:PsiDirectoryNode" />
++              <item name="Components" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
++              <item name="udemy" type="462c0819:PsiDirectoryNode" />
++              <item name="react" type="462c0819:PsiDirectoryNode" />
++              <item name="my-app" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="Components" type="462c0819:PsiDirectoryNode" />
++              <item name="Cockpit" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
++              <item name="udemy" type="462c0819:PsiDirectoryNode" />
++              <item name="react" type="462c0819:PsiDirectoryNode" />
++              <item name="my-app" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="containers" type="462c0819:PsiDirectoryNode" />
+             </path>
+           </expand>
+           <select />
+@@ -239,6 +287,16 @@
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/Practice1/my-app" />
+     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+   </component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\j1liv\Desktop\projects\udemy\react\my-app\src\Components" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\j1liv\Desktop\projects\udemy\react\my-app\src\containers" />
++      <recent name="C:\Users\j1liv\Desktop\projects\udemy\react\my-app\src\Components" />
++      <recent name="C:\Users\j1liv\Desktop\projects\udemy\react\my-app\src\Persons" />
++    </key>
++  </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+       <list>
+@@ -266,7 +324,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1533088605478</updated>
+-      <workItem from="1533088607771" duration="17467000" />
++      <workItem from="1533088607771" duration="23951000" />
+     </task>
+     <task id="LOCAL-00001" summary="updates, css, styles">
+       <created>1533442300880</created>
+@@ -275,11 +333,18 @@
+       <option name="project" value="LOCAL" />
+       <updated>1533442300880</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="updates, css, styles">
++      <created>1533503921757</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1533503921757</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="17467000" />
++    <option name="totallyTimeSpent" value="23951000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+@@ -293,7 +358,7 @@
+       <window_info anchor="bottom" id="Terminal" />
+       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+-      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+       <window_info anchor="bottom" id="Run" order="2" />
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+@@ -332,7 +397,7 @@
+     <entry file="file://$PROJECT_DIR$/react/my-app/src/registerServiceWorker.js">
+       <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/src/index.js">
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/containers/App.test.js">
+       <provider selected="true" editor-type-id="text-editor">
+         <state>
+           <folding>
+@@ -341,22 +406,46 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/src/App.test.js">
++    <entry file="file://$PROJECT_DIR$/react/my-app/package.json">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/config/webpack.config.prod.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state>
+-          <folding>
+-            <element signature="e#0#26#0" expanded="true" />
+-          </folding>
++        <state relative-caret-position="471">
++          <caret line="182" column="41" lean-forward="true" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/config/webpack.config.dev.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="415">
++          <caret line="167" column="68" lean-forward="true" selection-start-line="167" selection-start-column="68" selection-end-line="167" selection-end-column="68" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/src/App.css">
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Persons/Person/Person.css">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="84">
+-          <caret line="3" selection-start-line="3" selection-end-line="3" />
++        <state relative-caret-position="196">
++          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Persons/Person/Person.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="308">
++          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
++          <folding>
++            <element signature="e#0#26#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Persons/Persons.js">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Persons/Person/Person.css">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
+     <entry file="file://$PROJECT_DIR$/react/my-app/src/index.css">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="336">
+@@ -364,35 +453,65 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/src/Person/Person.css">
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/index.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="196">
+-          <caret line="7" column="1" selection-end-line="7" selection-end-column="1" />
++        <state>
++          <folding>
++            <element signature="e#0#26#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/src/App.js">
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Persons/Person/Person.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="2380">
+-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
++        <state relative-caret-position="336">
++          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+           <folding>
+-            <element signature="e#0#41#0" expanded="true" />
++            <element signature="e#0#26#0" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/src/Person/Person.js">
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Persons/Persons.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="28">
++          <caret line="1" column="13" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="13" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/containers/App.css">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="112">
++          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="1" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.css">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="392">
+-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
++        <state relative-caret-position="196">
++          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/Components/Cockpit/Cockpit.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="296">
++          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+           <folding>
+             <element signature="e#0#26#0" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/react/my-app/package.json">
+-      <provider selected="true" editor-type-id="text-editor" />
++    <entry file="file://$PROJECT_DIR$/react/my-app/src/containers/App.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="688">
++          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
++          <folding>
++            <element signature="e#0#41#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
+     </entry>
+   </component>
+ </project>
+\ No newline at end of file
+Index: react/my-app/src/Components/Cockpit/Cockpit.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/src/Components/Cockpit/Cockpit.css	(date 1533511347867)
++++ react/my-app/src/Components/Cockpit/Cockpit.css	(date 1533511347867)
+@@ -0,0 +1,7 @@
++.red{
++    color: red;
++}
++
++.bold{
++    font-weight: bold;
++}
+Index: react/my-app/src/Person/Person.js
+===================================================================
+--- react/my-app/src/Person/Person.js	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/src/Components/Persons/Person/Person.js	(date 1533508417199)
+@@ -1,11 +1,9 @@
+ import React from 'react';
+-import './Person.css'
++import classes from './Person.css'
+ 
+ const person = (props) => {
+-
+-
+     return (
+-        <div className="Person" >
++        <div className={classes.Person} >
+             <p onClick={props.click}>hi there I'm {props.name} and I'm {props.age} years old</p>
+             <input type="text" onChange={props.changed} value={props.name}/>
+         </div>
+Index: react/my-app/src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/src/index.js	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/src/index.js	(date 1533509489172)
+@@ -1,7 +1,7 @@
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+ import './index.css';
+-import App from './App';
++import App from './containers/App';
+ import registerServiceWorker from './registerServiceWorker';
+ 
+ ReactDOM.render(<App />, document.getElementById('root'));
+Index: react/my-app/src/Components/Cockpit/Cockpit.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/src/Components/Cockpit/Cockpit.js	(date 1533511360557)
++++ react/my-app/src/Components/Cockpit/Cockpit.js	(date 1533511360557)
+@@ -0,0 +1,35 @@
++import React from 'react';
++import dash from "./Cockpit.css";
++
++const cockpit = (props) => {
++
++    const style = {
++        background: 'green',
++        color: 'white',
++        font: 'inherit',
++        border: '1px solid blue',
++        padding: '8px',
++        cursor: 'pointer',
++
++    };
++
++    let classes = [];
++
++    if(props.persons.length <= 2){
++        classes.push(dash.red);
++    }
++    if(props.persons.length <= 1){
++        classes.push(dash.bold);
++    }
++
++
++  return(
++      <div >
++          <h1>Hi mate</h1>
++          <p className={classes.join(' ')}>this is really working</p>
++          <button onClick={props.clicked} style={style}>Switch Name</button>
++      </div>
++  );
++};
++
++export default cockpit;
+\ No newline at end of file
+Index: react/my-app/src/containers/App.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/src/containers/App.css	(date 1533510907448)
++++ react/my-app/src/containers/App.css	(date 1533510907448)
+@@ -0,0 +1,11 @@
++.App {
++  text-align: center;
++}
++
++.red{
++  color: red;
++}
++
++.bold{
++  font-weight: bold;
++}
+\ No newline at end of file
+Index: react/my-app/src/Components/Persons/Persons.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- react/my-app/src/Components/Persons/Persons.js	(date 1533509863700)
++++ react/my-app/src/Components/Persons/Persons.js	(date 1533509863700)
+@@ -0,0 +1,14 @@
++import React from 'react';
++import Person from "./Person/Person";
++
++const persons = (props) => props.persons.map((person, index) => {
++        return <Person
++            name={person.name}
++            age={person.age}
++            click={() => props.clicked(index)}
++            key={person.id}
++            changed={(event) => props.changed(event, person.id)}/>
++    }
++);
++
++export default persons;
+\ No newline at end of file
+Index: react/my-app/src/App.test.js
+===================================================================
+--- react/my-app/src/App.test.js	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/src/containers/App.test.js	(date 1533509509173)
+Index: react/my-app/src/Person/Person.css
+===================================================================
+--- react/my-app/src/Person/Person.css	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/src/Components/Persons/Person/Person.css	(date 1533181992318)
+Index: react/my-app/src/App.js
+===================================================================
+--- react/my-app/src/App.js	(revision b928bd6c06daa0dbb4cc412c1d24dc136a965511)
++++ react/my-app/src/containers/App.js	(date 1533511270087)
+@@ -1,6 +1,8 @@
+ import React, { Component } from 'react';
+-import './App.css';
+-import Person from './Person/Person';
++import dash from './App.css';
++import Person from '../Components/Persons/Person/Person';
++import Persons from '../Components/Persons/Persons';
++import Cockpit from '../Components/Cockpit/Cockpit'
+ 
+ class App extends Component {
+     state = {
+@@ -65,33 +67,31 @@
+       let persons = null;
+       let classes = [];
+       if(this.state.persons.length <= 2){
+-          classes.push('red');
++          classes.push(dash.red);
+       }
+-      if(this.state.persons.length <= 2){
+-          classes.push('bold');
++      if(this.state.persons.length <= 1){
++          classes.push(dash.bold);
+       }
++
++      console.log(dash.App);
+ 
+       if(this.state.showPerson){
+           persons = (
+               <div>
+-                  {this.state.persons.map((person, index) => {
+-                      return <Person
+-                          name={person.name}
+-                          age={person.age}
+-                          click={() => this.deletePersonHandler(index)}
+-                          key={person.id}
+-                          changed={(event) => this.nameChangeHandler(event, person.id)}/>
+-                  })}
++                  <Persons
++                      persons={this.state.persons}
++                      clicked={this.deletePersonHandler}
++                      changed={this.nameChangeHandler}/>
+               </div>
+           );
+           style.backgroundColor = 'red';
+       }
+ 
+     return (
+-      <div className="App">
+-        <h1>Hi mate</h1>
+-          <p className={classes.join(' ')}>this is really working</p>
+-          <button onClick={this.togglePersonsHandler} style={style}>Switch Name</button>
++      <div className={dash.App}>
++          <Cockpit showPerson={this.state.showPerson}
++                   persons={this.state.persons}
++                   clicked={this.togglePersonsHandler}/>
+           {persons}
+       </div>
+ 

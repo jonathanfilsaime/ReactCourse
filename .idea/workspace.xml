@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1d210b2-f5b9-451e-840d-25dac65f8b5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Logo/Logo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Logo/Logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Navigation/NavigationItems/NavigationItems.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Navigation/Toolbar/Toolbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/polyfills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/webpack.config.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/webpack.config.prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/scripts/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/assets/images/burger-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Burger/BurgerIngredients/BurgerIngredients.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/UI/Button/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_css_module/webpack.config.dev.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_css_module/webpack.config.prod.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Burger/OrderSummary/OrderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Burger/OrderSummary/OrderSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Layout/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Layout/Layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/components/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pratice2/burger-builder/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/Pratice2/burger-builder/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +33,7 @@
     <session id="342648225">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -64,7 +68,7 @@
           <entry key="css" value="1203" />
           <entry key="html" value="15" />
           <entry key="js" value="9036" />
-          <entry key="txt" value="128" />
+          <entry key="txt" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +76,7 @@
           <entry key="CSS" value="1203" />
           <entry key="HTML" value="15" />
           <entry key="JavaScript" value="8963" />
-          <entry key="PLAIN_TEXT" value="201" />
+          <entry key="PLAIN_TEXT" value="217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -305,7 +309,7 @@
               <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
               <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
@@ -313,8 +317,8 @@
               <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
               <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="BurgerBuilder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
@@ -322,65 +326,7 @@
               <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
               <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Logo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="NavigationItems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="NavigationItems" type="462c0819:PsiDirectoryNode" />
-              <item name="NavigationItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="Pratice2" type="462c0819:PsiDirectoryNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="Toolbar" type="462c0819:PsiDirectoryNode" />
+              <item name="hoc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,7 +382,7 @@
       <workItem from="1533088607771" duration="27903000" />
       <workItem from="1534015716455" duration="1522000" />
       <workItem from="1534017658166" duration="899000" />
-      <workItem from="1534018569989" duration="17380000" />
+      <workItem from="1534018569989" duration="18119000" />
     </task>
     <task id="LOCAL-00001" summary="updates, css, styles">
       <created>1533442300880</created>
@@ -480,15 +426,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534125657972</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="naviagtion items">
+      <created>1534127943861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534127943861</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47704000" />
+    <option name="totallyTimeSpent" value="48443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -521,7 +473,8 @@
     <MESSAGE value="breaking it down into components" />
     <MESSAGE value="start the new app burger builder" />
     <MESSAGE value="app burger builder got to the modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="app burger builder got to the modal" />
+    <MESSAGE value="naviagtion items" />
+    <option name="LAST_COMMIT_MESSAGE" value="naviagtion items" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/react/my-app/config/webpack.config.prod.js">

@@ -87,7 +87,7 @@ class BurgerBuilder extends Component {
             disabledInfo[key] = disabledInfo[key] <= 0;
         }
         return(
-            <Wrapper>
+            <React.Fragment>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
                     <OrderSummary
                         price={this.state.totalPrice}
@@ -104,7 +104,7 @@ class BurgerBuilder extends Component {
                     ordered={this.purchaseHandler}
                     purchasable={this.state.purchasable}
                 />
-            </Wrapper>
+            </React.Fragment>
         );
     }
 

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Modal from '../../components/UI/Modal/Modal';
-import axios from '../../axios-orders';
 
 
 const withErrorHandler = (WrappedComponent, axios) => {
@@ -9,16 +8,22 @@ const withErrorHandler = (WrappedComponent, axios) => {
             error: null
         }
 
-        componentDidMount(){
-            axios.interceptors.request.use(request => {
+        componentWillMount(){
+            this.reqInterceptor = axios.interceptors.request.use(request => {
                 this.setState({error: null});
+                return request;
             });
 
 
-            axios.interceptors.response.use(null, error => {
+            this.resInterceptor = axios.interceptors.response.use(res => res, error => {
                 this.setState({error: error});
                 console.log(error)
             });
+        }
+
+        componentWillUnmount(){
+            axios.interceptors.request.eject(this.reqInterceptor);
+            axios.interceptors.request.eject(this.resInterceptor);
         }
 
         errorConfirmedHandler = () => {
@@ -30,7 +35,7 @@ const withErrorHandler = (WrappedComponent, axios) => {
                 <React.Fragment>
                     <Modal
                         show={this.state.error}
-                        clicked={this.errorConfirmedHandler}>
+                        modalClosed={this.errorConfirmedHandler}>
                         {this.state.error ? this.state.error.message : null}
                     </Modal>
                     <WrappedComponent {...this.props}/>

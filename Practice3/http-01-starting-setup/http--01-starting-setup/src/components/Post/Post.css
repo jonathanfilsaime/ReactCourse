@@ -1,7 +1,9 @@
 .Post {
     width: 250px;
+    height: 250px;
     padding: 16px;
     text-align: center;
+    text-decoration: none;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     margin: 10px;

@@ -26,9 +26,8 @@ class Posts extends Component {
             }).catch(error => {console.log(error)});
     }
 
-
     postSelectedHandler = (id) => {
-        this.setState({seletedPostId: id})
+        this.props.history.push('/posts/'+id);
     };
 
     render(){
@@ -38,13 +37,12 @@ class Posts extends Component {
         if(!this.state.error)
         {
             posts = this.state.posts.map(post => {
-                return (<Link to={'/' + post.id} key={post.id}  >
-                    <Post
+                return (<Post
+                    key={post.id}
                     title={post.title}
                     author={post.author}
                     clicked={()=> this.postSelectedHandler(post.id)}
-                />
-                </Link>)
+                />)
             });
         }
 
@@ -53,7 +51,7 @@ class Posts extends Component {
                 <section className="Posts">
                     {posts}
                 </section>
-                <Route path={this.props.match.url}"/posts/:id"  exact component={FullPost}/>
+                <Route path={this.props.match.url+'/:id'}  exact component={FullPost}/>
             </div>
 
         );
